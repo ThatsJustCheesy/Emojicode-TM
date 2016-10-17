@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+# NOTE: This script does not provide the best-looking output. TextMate::Executor from the Bundle Support bundle is how the majority of bundles do output. However, this interface is only available via Ruby, and I do not know Ruby, nor do I have much of a reason to learn it right now. If somebody else does know Ruby well enough, please feel free to replace this script with a better one and remove this message. Thank you! —— ThatsJustCheesy
+
+/usr/local/bin/emojicodec $TM_FILEPATH -o /dev/null
+
+echo	# Will always succeed; guarentees output is shown in the HTML Output area (rather than a modal sheet saying the command failed)</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^@b</string>
+	<key>name</key>
+	<string>Compile</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>scope</key>
+	<string>source.emojicode</string>
+	<key>uuid</key>
+	<string>D3F70F3E-78E9-4F0B-92EF-4CAFE0817A23</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

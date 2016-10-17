@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:name} ${2|🚂,🚀,🔣,🔡,⏩,🍨🐚,🍯🐚|}</string>
+	<key>name</key>
+	<string>Method Parameter</string>
+	<key>scope</key>
+	<string>source.emojicode meta.function.method, source.emojicode meta.function.initializer</string>
+	<key>tabTrigger</key>
+	<string>par</string>
+	<key>uuid</key>
+	<string>739A3036-0640-4BF0-A756-B855B3A4BB57</string>
+</dict>
+</plist>

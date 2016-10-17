@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+# NOTE: This script does not provide the best-looking output. TextMate::Executor from the Bundle Support bundle is how the majority of bundles do output. However, this interface is only available via Ruby, and I do not know Ruby, nor do I have much of a reason to learn it right now. If somebody else does know Ruby well enough, please feel free to replace this script with a better one and remove this message. Thank you! —— ThatsJustCheesy
+
+bytecodeFile=$(echo $TM_FILENAME | sed 's/\(.*\)\.emojic/\1.emojib/')
+
+cd $TM_PROJECT_DIRECTORY
+/usr/local/bin/emojicodec $TM_FILEPATH
+
+# Exit if file does not exist (compilier errored) 
+if [ ! -e $bytecodeFile ]; then echo ; exit ; fi
+
+/usr/local/bin/emojicode $bytecodeFile
+rm $bytecodeFile
+
+echo	# Will always succeed; guarentees output is shown in the HTML Output area (rather than a modal sheet saying the command failed)</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@R</string>
+	<key>name</key>
+	<string>Run</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>scope</key>
+	<string>source.emojicode</string>
+	<key>uuid</key>
+	<string>29B2761C-5DE0-4A54-84BC-F514F1539A4C</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

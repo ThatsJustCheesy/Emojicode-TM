@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Indentation</string>
+	<key>scope</key>
+	<string>source.emojicode</string>
+	<key>settings</key>
+	<dict>
+		<key>decreaseIndentPattern</key>
+		<string>
+	🍉
+	</string>
+		<key>increaseIndentPattern</key>
+		<string>
+	🍇
+	</string>
+		<key>indentNextLinePattern</key>
+		<string>
+	</string>
+		<key>unIndentedLinePattern</key>
+		<string>
+	</string>
+		<key>zeroIndentPattern</key>
+		<string>
+	👴{2,}
+	</string>
+	</dict>
+	<key>uuid</key>
+	<string>96861587-A0BE-43E6-B6F2-144312CEB5FA</string>
+</dict>
+</plist>

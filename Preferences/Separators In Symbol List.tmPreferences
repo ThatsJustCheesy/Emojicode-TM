@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: Separators</string>
+	<key>scope</key>
+	<string>meta.separator.emojicode</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+		<key>symbolTransformation</key>
+		<string>
+	s/.*/-/;	# Replace entire match with a single hyphen to make a menu separator
+	</string>
+	</dict>
+	<key>uuid</key>
+	<string>1D90A935-A40E-4F4F-9C39-2222400603F3</string>
+</dict>
+</plist>

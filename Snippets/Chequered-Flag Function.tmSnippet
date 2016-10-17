@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>🏁 ➡️ 🚂 🍇
+	$0
+	
+	🍎 0
+🍉</string>
+	<key>name</key>
+	<string>Chequered Flag Function</string>
+	<key>scope</key>
+	<string>source.emojicode</string>
+	<key>tabTrigger</key>
+	<string>main</string>
+	<key>uuid</key>
+	<string>00F019D8-618B-45C3-A9CA-4763EFE052C5</string>
+</dict>
+</plist>

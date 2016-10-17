@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>whfgpurrfl@bhgybbx.pbz</string>
+	<key>contactName</key>
+	<string>ThatsJustCheesy</string>
+	<key>description</key>
+	<string>New shiny bundle for Emojicode.</string>
+	<key>name</key>
+	<string>Emojicode</string>
+	<key>uuid</key>
+	<string>8F600432-2D9B-4475-AE15-7AAAC574E3AE</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<!-- Compile --> <string>6695F2A0-7572-47C2-917A-55964B07B3F3</string> 
+			<!-- Run --> <string>CA207B10-119A-45B9-B92D-E9D861DA9C7B</string>
+			<string>------------------------------------</string>
+			<!-- Snippets --> <string>59e661c0-cd4e-47c9-b8d3-ec4e6d2e8c68</string>
+		</array>
+		<key>submenus</key>
+		<dict>
+			<key>59e661c0-cd4e-47c9-b8d3-ec4e6d2e8c68</key>
+			<dict>
+				<key>name</key>
+				<string>Snippets</string>
+				<key>items</key>
+				<array>
+					<!-- Variable Declaration --> <string>7F8D81BA-4390-4A17-9C3C-349831E6496B</string>
+					<!-- Method Definition --> <string>15D08B62-5C59-4955-AE39-059FB2FB3252</string>
+				</array>
+			</dict>
+		</dict>
+	</dict>
+	<key>ordering</key>
+	<array>
+		<string>6695F2A0-7572-47C2-917A-55964B07B3F3</string>
+		<string>CA207B10-119A-45B9-B92D-E9D861DA9C7B</string>
+		<string>7F8D81BA-4390-4A17-9C3C-349831E6496B</string>
+		<string>15D08B62-5C59-4955-AE39-059FB2FB3252</string>
+	</array>
+</dict>
+</plist>
