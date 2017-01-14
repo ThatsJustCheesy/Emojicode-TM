@@ -9,7 +9,7 @@
 	<key>scope</key>
 	<string>source.emojicode meta.function</string>
 	<key>tabTrigger</key>
-	<string>freeze let</string>
+	<string>freeze</string>
 	<key>uuid</key>
 	<string>05BB8B1E-E0C6-42FB-BC25-9D2AEE7A7849</string>
 </dict>
