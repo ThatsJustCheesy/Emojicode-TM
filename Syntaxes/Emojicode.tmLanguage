@@ -113,20 +113,25 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>^\s*(🐇\s*([^🐖\s])\s*([^🐖\s]?))[^🐖\s]*🍇</string>
+					<string>(🐇\s*([^🐖\s])\s*([^🐖\s]?))[^🐖\s]*🍇</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>meta.toc-list.class.emojicode</string>
+							<string></string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.type.class.emojicode</string>
+							<string>meta.toc-list.class.emojicode</string>
 						</dict>
 						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.type.class.emojicode</string>
+						</dict>
+						<key>4</key>
 						<dict>
 							<key>name</key>
 							<string>storage.type.class.emojicode</string>
@@ -159,8 +164,29 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>begin</key>
-					<string>^\s*👴{2,}\s+([^\s].*)$</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>meta.toc-list.separator.emojicode</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>meta.toc-list.emojicode</string>
+						</dict>
+					</dict>
+					<key>comment</key>
+					<string>Separator comment; appears as separator in symbol list, with optional text following</string>
+					<key>match</key>
+					<string>^\s*(👴{3,})\s*([^\s].*)?$</string>
+					<key>name</key>
+					<string>meta.separator.emojicode</string>
+					<key>while</key>
+					<string>(?=im)possible</string>
+				</dict>
+				<dict>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
@@ -169,14 +195,12 @@
 							<string>meta.toc-list.emojicode</string>
 						</dict>
 					</dict>
-				</dict>
-				<dict>
+					<key>comment</key>
+					<string>Section comment; text appears in symbol list</string>
 					<key>match</key>
-					<string>^\s*👴{3,}\s*$</string>
+					<string>^\s*👴{2,}\s+([^\s].*)$</string>
 					<key>name</key>
-					<string>meta.separator.emojicode</string>
-					<key>while</key>
-					<string>(?=im)possible</string>
+					<string>comment.line.older-man.emojicode</string>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -195,6 +219,8 @@
 				<dict>
 					<key>begin</key>
 					<string>🌮</string>
+					<key>comment</key>
+					<string>I would import Markdown here, but it gets formatted funny if there's any indentation.</string>
 					<key>end</key>
 					<string>🌮</string>
 					<key>name</key>
@@ -458,7 +484,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>[\s🐇🖋🔏🔓🔐🔒]*🐈\s*([^\s]).*🍇</string>
+					<string>[\s🔓🔐🔒✒️🔏🔑🍬]*🐈\s*([^\s]).*🍇</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -587,7 +613,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>^\s*[\s🐇🖋🔏🔓🔐🔒]*🐖\s*([^\s])(.*?)(?:➡️\s*([^\s]))?\s*🍇</string>
+					<string>^[\s🐇🔓🔐🔒✒️🔏]*🐖\s*([^\s])(.*?)(?:➡️\s*([^\s]))?\s*🍇</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -643,7 +669,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>^\s*[\s🐇🖋🔏🔓🔐🔒]*🐖\s*([^\s]).*?(?:➡️\s*[^\s])?\s*📻</string>
+					<string>^[\s🐇🔓🔐🔒✒️🔏]*🐖\s*([^\s]).*?(?:➡️\s*[^\s])?\s*📻</string>
 					<key>name</key>
 					<string>meta.function.method.native.emojicode</string>
 				</dict>

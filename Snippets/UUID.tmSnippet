@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>$TM_DOCUMENT_UUID</string>
 	<key>name</key>
-	<string>UUID</string>
+	<string>UUID (Bundle Dev)</string>
 	<key>tabTrigger</key>
 	<string>uuid</string>
 	<key>uuid</key>

@@ -4,6 +4,8 @@
 <dict>
 	<key>author</key>
 	<string>Ian Gregory</string>
+	<key>comment</key>
+	<string>Based on of Made of Code.</string>
 	<key>name</key>
 	<string>Test Theme</string>
 	<key>semanticClass</key>

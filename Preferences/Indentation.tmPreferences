@@ -8,22 +8,24 @@
 	<string>source.emojicode</string>
 	<key>settings</key>
 	<dict>
+		<key>comment</key>
+		<string>For some reason (I haven't looked into it much), this file seems to be broken/do nothing.</string>
 		<key>decreaseIndentPattern</key>
-		<string>
+		<string>(?x)
 	🍉
 	</string>
 		<key>increaseIndentPattern</key>
-		<string>
+		<string>(?x)
 	🍇
 	</string>
 		<key>indentNextLinePattern</key>
-		<string>
+		<string>(?x)
 	</string>
 		<key>unIndentedLinePattern</key>
-		<string>
+		<string>(?x)
 	</string>
 		<key>zeroIndentPattern</key>
-		<string>
+		<string>(?x)
 	👴{2,}
 	</string>
 	</dict>
